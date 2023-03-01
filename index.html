@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simon Game</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bevan|Lato|VT323'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div id="holder">
+    <div id="mainboard">
+      <p class="logo">Simon</p>
+      <div id="count">--</div>
+      <a href="#">
+        <div id="startbutton" onclick="startButton()"></div>
+      </a>
+      <a href="#">
+        <div id="strictmode" onclick="strictMode()"></div>
+      </a>
+      <div id="strictlight"></div>
+      <p>COUNT &nbsp&nbsp&nbsp&nbsp&nbsp (re)START &nbsp&nbsp&nbsp&nbsp STRICT</p>
+      <span class="onofftext">OFF</span>
+      <a href="#">
+        <div id="switchholder" onclick="onoffswitch()">
+          <div id="onoffswitch"></div>
+        </div>
+      </a>
+      <span class="onofftext">ON</span>
+    </div>
+
+    <a href="#">
+      <div id="green" class="colorbuttons" onmousedown="playerInput(1)"></div>
+    </a>
+    <a href="#">
+      <div id="red" class="colorbuttons" onmousedown="playerInput(2)"></div>
+    </a>
+    <br>
+    <a href="#">
+      <div id="yellow" class="colorbuttons" onmousedown="playerInput(3)"></div>
+    </a>
+    <a href="#">
+      <div id="blue" class="colorbuttons" onmousedown="playerInput(4)"></div>
+    </a>
+  </div>
+</div>
+
+<!-- Simon button press sounds -->
+<audio id="greensound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload="auto"></audio>
+<audio id="redsound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload="auto"></audio>
+<audio id="bluesound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload="auto"></audio>
+<audio id="yellowsound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload="auto"></audio>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
